@@ -33,13 +33,15 @@
         }
         input[type="text"],
         input[type="email"],
+        input[type="number"],
         textarea {
-            width: 90%;
-            padding: 8px;
-            margin-bottom: 5px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+        width: 90%;
+        padding: 8px;
+        margin-bottom: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
         }
+
         textarea {
             height: 75px;
             resize: none;
@@ -64,19 +66,19 @@
         <h2>Formulir Donasi</h2>
         
         <label for="firstName">Nama Depan </label>
-        <input type="text" name="Nama_depan" placeholder="" required>
+        <input type="text" name="Nama_depan" placeholder="" maxlength="50" required>
 
         <label for="lastName">Nama Belakang</label>
-        <input type="text" name="Nama_belakang" placeholder="">
+        <input type="text" name="Nama_belakang" placeholder="" maxlength="50" required>
 
         <label for="email">Alamat Email</label>
         <input type="email" name="Email" placeholder="">
 
         <label for="phone">Nomor Telepon</label>
-        <input type="text" name="nomer" placeholder="">
+        <input type="text" name="nomer" placeholder="" maxlength="13">
 
         <label for="donationAmount">Jumlah Donasi</label>
-        <input type="text" name="Nominal" placeholder="">
+        <input type="number" name="Nominal" placeholder="" min = "0">
 
         <label for="message">Pesan</label>
         <textarea name="pesan" placeholder="Tulis pesan disini"></textarea>
